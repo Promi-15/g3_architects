@@ -194,7 +194,7 @@ text-align: center;
     }
     .teams {
         grid-template-columns: repeat(1,1fr);
-        padding-left: 70px;
+        padding-left: 0px;
     }
     .card-img{
         padding-left: 90px;
