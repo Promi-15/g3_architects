@@ -1,0 +1,237 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;  
+}
+header{
+    background-color: rgba(255,144,14,0.10);
+    padding: 50px 230px;
+}
+.banner img{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav h2{
+    font-size: 1.5rem;
+}
+nav ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    text-decoration: none;
+    color: #424242;
+    margin: 20px;
+}
+.new-groups{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.new-groups h1{
+    text-align: center;
+    font-size: 2.8rem;
+    line-height: 44px;
+    padding-top: 120px;
+   
+}
+ .description{
+    color: #727272;
+    line-height: 34px;
+    padding-top: 40px;
+ 
+}
+
+.title{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #131313;   
+}
+.btn{
+    background-color: #FF900E;
+    color: white;
+    padding: 20px 25px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+.team{
+    padding: 50px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+.teams{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+}
+.feature{
+  padding: 100px ;
+
+}
+.feature span{
+    font-size: 2.8rem;
+}
+ .feature .grey{
+      color: #727272;
+      font-weight: 500px;  
+}
+.feature .features{
+   color: #FF900E;
+}
+.enjoy{
+    display: flex;
+    padding: 30px;
+    justify-content: space-between;
+    gap: 20px;
+
+}
+
+.card >h1{
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+.card-img{
+    margin-top: 10px;
+    padding: 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+}
+.card-img h1{
+    font-size: 1.2rem;
+}
+.arc-img img{
+    margin-left: 90px; 
+    position: relative; 
+}
+.ten_years{
+background-color: #FF900E;
+padding: 60px;
+color: #FFF;
+width: 40%;
+line-height: 34px;
+border-radius: 8px;
+position: relative;
+bottom: 100px;
+text-align: center;
+
+}
+.ten_years h1{
+     font-size:2.8rem;
+     margin: 0;
+     font-weight: bold;
+   
+}
+.ten_years p{
+    padding-top: 15px;
+    font-size: 1.2rem;
+}
+.facts{
+    margin: 30px;
+}
+.options{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+   
+}
+.card-caption{
+    border:1px solid #FF900E;
+    padding: 50px;
+    border-radius: 8px;
+    text-align: center;
+    margin: 10px;
+}
+.options p{
+    color: #727272;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.sponsor-text{
+   text-align: center;
+}
+.sponsor-img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.sponsor-img img{
+   width: 165px;
+   
+}
+
+
+@media screen and (max-width:576px) {
+    
+   
+    header{
+        padding: 20px;
+       
+    }
+    nav ,.team ,.enjoy,.options,.sponsor-img{
+        flex-direction: column;
+        gap: 20px;
+     
+    }
+    .sponsor-img{
+       align-items: center;
+       gap: 50px;
+    }
+    .teams {
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 70px;
+    }
+    .card-img{
+        padding-left: 90px;
+        grid-template-columns: repeat(1,1fr);
+        padding-left: 90px;
+    }
+    .arc-img img{
+        width: 90%;
+       margin-left: 10px;
+    }
+
+    
+   
+    
+}
+    @media screen and (min-width:576px) and (max-width:960px)  {
+        header{
+            padding: 20px;
+        }
+        nav  {
+            flex-direction: column;
+            gap: 20px;
+        }
+        .teams {
+            grid-template-columns: repeat(2,1fr);
+ 
+        }
+        .team,.enjoy,.options,.sponsor-img{
+            flex-direction: column;
+          
+         }
+         .arc-img img{
+            width: 90%;
+           margin-left: 15px;
+        }
+        .sponsor-img{
+            align-items: center;
+            gap: 50px;
+         }
+    }
